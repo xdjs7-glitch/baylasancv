@@ -74,8 +74,8 @@ st.markdown("---")
 st.markdown("## 📫 تواصل معي")
 st.markdown("""
 - 📧 البريد الإلكتروني: [baylasanalmuqati@gmail.com](mailto:baylasanalmuqati@gmail.com)
-- 💼 لينكدإن: [linkedin.com/in/yourname](https://linkedin.com/in/yourname)
-- 🐙 GitHub: [github.com/yourusername](https://github.com/yourusername)
+- 💼 لينكدإن: [linkedin.com/in/baylasan-almuqati](https://linkedin.com/in/baylasan-almuqati)
+
 """)
 
 # Footer
