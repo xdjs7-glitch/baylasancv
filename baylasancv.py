@@ -1,64 +1,83 @@
 import streamlit as st
-from PIL import Image
 
-# Page configuration
+# Configure the page
 st.set_page_config(
-    page_title="Baylasan Almuqati | Data Science Portfolio",
+    page_title="بيان السان المقاطي | عالمة بيانات",
     page_icon="📊",
     layout="centered"
 )
 
-# Main header
-st.title("👩‍💻 Baylasan Almuqati")
-st.subheader("Data Scientist | Analyst | Business Enthusiast")
+# Custom CSS for dark theme
+st.markdown("""
+    <style>
+        body, .stApp {
+            background-color: #0e1117;
+            color: #f0f0f0;
+            font-family: 'Cairo', sans-serif;
+        }
+        h1, h2, h3 {
+            color: #ffb703;
+        }
+        a {
+            color: #8ecae6;
+        }
+        .stMarkdown p {
+            line-height: 1.8;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+# Arabic content
+st.title("👩‍💻 بيلسان خالد المقاطي")
+st.subheader("عالمة بيانات | محللة | شغوفة بالأعمال")
 st.markdown("---")
 
-# About Section
-st.markdown("## 🌟 About Me")
+# About Me
+st.markdown("## 🌟 عني")
 st.markdown("""
-Hello! I'm **Baylasan Almuqati**, a passionate and aspiring data scientist currently studying at **Princess Nourah bint Abdulrahman University**.
+مرحبًا! أنا **بيان السان المقاطي**، طالبة في **جامعة الأميرة نورة بنت عبد الرحمن** وشغوفة بعلم البيانات وتحليل الأعمال.
 
-My interests lie at the intersection of **data, business, and technology** — I love turning raw data into meaningful insights that drive smart decisions. From analyzing user behavior to predicting trends, I enjoy every step of the data journey.
+أؤمن بأن البيانات هي مفتاح النجاح في العصر الحديث، وأسعى لاستخدامها لفهم الأنماط، دعم اتخاذ القرار، وتقديم رؤى قيّمة تساعد في تطوير الاستراتيجيات.
 
-I'm particularly interested in:
-- 📈 Business Intelligence
-- 🧠 Machine Learning
-- 📊 Data Visualization
-- 💼 Strategic Analysis
+**اهتماماتي تشمل:**
+- 📈 ذكاء الأعمال
+- 🤖 تعلم الآلة
+- 📊 التصوير البياني للبيانات
+- 💼 تحليل الأسواق والاستراتيجيات
 """)
 
-# Project Section
+# Projects
 st.markdown("---")
-st.markdown("## 🚀 Featured Project")
+st.markdown("## 🚀 مشروع مميز")
 
 st.markdown("""
-### 📞 Telecom Churn Prediction
-This project uses machine learning (SVM model) to predict whether a customer is likely to churn from a telecom service. It was built with **Google Colab**, **Streamlit**, and deployed using **Streamlit Cloud**.
+### 📞 التنبؤ بمغادرة العملاء في قطاع الاتصالات
+مشروع يستخدم نموذج تعلم الآلة (SVM) للتنبؤ باحتمالية مغادرة العميل لخدمة الاتصالات. تم تطويره باستخدام **Google Colab** و**Streamlit** وتم نشره عبر **Streamlit Cloud**.
 
-🔗 [Live Website](https://your-streamlit-app-link)  
-📂 [GitHub Repository](https://github.com/yourusername/telecom-churn)
+🔗 [رابط الموقع](https://your-streamlit-app-link)  
+📂 [رابط GitHub](https://github.com/yourusername/telecom-churn)
 
-**Skills used:** Python, Pandas, Scikit-learn, Data Cleaning, Model Deployment
+**المهارات المستخدمة:** بايثون، معالجة البيانات، Scikit-learn، النشر عبر السحابة
 """)
 
 # Education
 st.markdown("---")
-st.markdown("## 🎓 Education")
+st.markdown("## 🎓 التعليم")
 st.markdown("""
-**Princess Nourah bint Abdulrahman University**  
-_Bachelor’s in Data Science_  
-📍 Riyadh, Saudi Arabia  
+**جامعة الأميرة نورة بنت عبد الرحمن**  
+_بكالوريوس في علم البيانات_  
+📍 الرياض، المملكة العربية السعودية
 """)
 
-# Footer
+# Contact
 st.markdown("---")
-st.markdown("## 📫 Get in Touch")
+st.markdown("## 📫 تواصل معي")
 st.markdown("""
-- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
-- 💼 LinkedIn: [linkedin.com/in/yourname](https://linkedin.com/in/yourname)
+- 📧 البريد الإلكتروني: [baylasanalmuqati@gmail.com](mailto:baylasanalmuqati@gmail.com)
+- 💼 لينكدإن: [linkedin.com/in/yourname](https://linkedin.com/in/yourname)
 - 🐙 GitHub: [github.com/yourusername](https://github.com/yourusername)
 """)
 
+# Footer
 st.markdown("----")
-st.markdown("Made with ❤️ using Streamlit")
-
+st.markdown("تم الإنشاء بكل ❤️ باستخدام Streamlit")
