@@ -80,7 +80,7 @@ st.markdown("""
 
 # Footer
 st.markdown("----")
-st.markdown("تم الإنشاء بكل ❤️ باستخدام Streamlit")
+st.markdown("تم الإنشاء بكل ❤️ من قبل baylasana")
 # Hide Streamlit default menu and footer
 hide_streamlit_style = """
     <style>
