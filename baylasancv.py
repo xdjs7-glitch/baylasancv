@@ -35,7 +35,7 @@ st.markdown("---")
 # About Me
 st.markdown("## 🌟 عني")
 st.markdown("""
-مرحبًا! أنا **بيان السان المقاطي**، طالبة في **جامعة الأميرة نورة بنت عبد الرحمن** وشغوفة بعلم البيانات وتحليل الأعمال.
+مرحبًا! أنا **بيلسان المقاطي**، طالبة في **جامعة الأميرة نورة بنت عبد الرحمن** وشغوفة بعلم البيانات وتحليل الأعمال.
 
 أؤمن بأن البيانات هي مفتاح النجاح في العصر الحديث، وأسعى لاستخدامها لفهم الأنماط، دعم اتخاذ القرار، وتقديم رؤى قيّمة تساعد في تطوير الاستراتيجيات.
 
@@ -81,3 +81,12 @@ st.markdown("""
 # Footer
 st.markdown("----")
 st.markdown("تم الإنشاء بكل ❤️ باستخدام Streamlit")
+# Hide Streamlit default menu and footer
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
