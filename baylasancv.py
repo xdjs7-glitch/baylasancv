@@ -90,3 +90,22 @@ hide_streamlit_style = """
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# Hide Streamlit main menu, footer, header, and viewer icon buttons
+st.markdown("""
+    <style>
+        #MainMenu {visibility: hidden;}
+        footer {visibility: hidden;}
+        header {visibility: hidden;}
+
+        /* Hide bottom right floating buttons */
+        .stActionButton, .st-emotion-cache-1avcm0n {
+            display: none !important;
+        }
+
+        /* Additional safety: hide all fixed widgets */
+        div[data-testid="stFloatingButton"] {
+            display: none !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
